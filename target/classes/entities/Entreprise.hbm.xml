@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="entities.Entreprise" table="Entreprises">
+		<id name="codeID" type="int" column=" codeID" unsaved-value="0">
+			<generator class="assigned" />
+		</id>
+		<property name="libelle" />
+	</class>
+</hibernate-mapping>

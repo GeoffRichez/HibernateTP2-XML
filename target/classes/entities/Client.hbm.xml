@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="entities.Client" table="Clients">
+		<id name="clientId" type="int" column=" clientId" unsaved-value="0">
+			<generator class="assigned" />
+		</id>
+		<property name="nom" />
+		<property name="prénom" column="prenom" />
+	</class>
+</hibernate-mapping>
